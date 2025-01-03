@@ -1,15 +1,14 @@
-// function isLeapYear(year) {
-//     if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
-//         return `${year} is a leap year.`;
-//     }
-//     else{
-//         `${year} is not a leap year.`
-//     }
-// }
+
+function isLeapYear(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+  }
+
+const num_year = 2004;
 
 
-// let year = 2002;
-// year = parseInt(year);
-// console.log(isLeapYear(year));
-
+if(isLeapYear(num_year)){
+    console.log(`${num_year} is a leap year.`);
+}else{
+    console.log(`${num_year} is not a leap year.`);
+}
 
